@@ -3,6 +3,7 @@
 @import helper._
 
 @main("Molecule visualizer") {
+    <h2>Enter any IUPAC name</h2>
     @form(routes.Application.show) {
         @inputText(molForm("name"))
         <input type="submit" value="Get image"/>

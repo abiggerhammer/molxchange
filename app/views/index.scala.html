@@ -1,0 +1,10 @@
+@(molForm: Form[Option[models.Molecule]])
+
+@import helper._
+
+@main("Molecule visualizer") {
+    @form(routes.Application.show) {
+        @inputText(molForm("name"))
+        <input type="submit" value="Get image"/>
+    }
+}

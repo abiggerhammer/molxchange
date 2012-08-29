@@ -1,0 +1,11 @@
+@(mol: models.Molecule)(png: String)
+
+@import helper._
+
+@imgsrc(data: String) = @{
+    "data:image/png;base64," ++ data
+}
+
+@main("Molecule visualizer results") {
+    <img src=@imgsrc(png)>
+}
